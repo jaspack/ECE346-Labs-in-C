@@ -4,6 +4,7 @@
 int volatile* const startingAddress = (int*)0x1000;
 int volatile* const JTAG = (int*)JTAG_UART_BASE;
 
+int numtoPrint = 24680;
 
 /*******************************************************************************
  * Subroutine to send a character to the JTAG UART
