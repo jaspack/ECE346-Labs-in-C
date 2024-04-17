@@ -42,7 +42,7 @@ int main(void)
 	char message[] = "Number to print: \0";
 	Cout(message);
 
-	char num* = Num2Str(numtoPrint); 
+	char* num = Num2Str(numtoPrint); 
 	Cout(num);
 
 	return 0;
