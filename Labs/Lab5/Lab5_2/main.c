@@ -1,4 +1,5 @@
 #include"../../address_map_arm.h"
+#include"num2str.h"
 
 
 int volatile* const startingAddress = (int*)0x1000;
@@ -9,9 +10,17 @@ int numtoPrint = 24680;
 /*******************************************************************************
  * Subroutine to send a character to the JTAG UART
  ******************************************************************************/
-void Cout(char c) {
-    
+void Cout(char str[]) {
+
+    char c = str[0];
+
+    int i = 1;
+
+    while (c != '\0')
+    {
         *(JTAG) = c;
+        c = str[i++];
+    }
 }
 
 char Cin() {
@@ -30,24 +39,11 @@ char Cin() {
 int main(void)
 {
 
-	char message[] = "Type here: \0";
+	char message[] = "Number to print: \0";
+	Cout(message);
 
-    char c = 'T';
-
-    int i = 1;
-
-    while (c != '\0')
-    {
-        Cout(c);
-        c = message[i++];
-    }
-
-    while (1)
-    {
-        c = Cin();
-        if (c != '\0')
-            Cout(c);    
-    }
+	char num* = Num2Str(numtoPrint); 
+	Cout(num);
 
 	return 0;
 }
