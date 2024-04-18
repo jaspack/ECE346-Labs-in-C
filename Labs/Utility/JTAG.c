@@ -1,5 +1,7 @@
 #include"../../address_map_arm.h"
 
+int volatile* const JTAG = (int*)JTAG_UART_BASE;
+
 void PrintChar(char c)
 {
     *(JTAG) = c;
