@@ -24,3 +24,17 @@ void Println(char str[])
     Print(str);
     PrintChar('\n');
 }
+
+
+char Read(void) 
+{
+    int dataRegister;
+    // read the JTAG_UART data register
+    dataRegister = *(JTAG);
+
+    // Masking with position of Rvalid to see if there is a new character available
+    if (dataRegister & 0x00008000)
+        return ((char)dataRegister & 0xFF);
+    else
+        return ('\0');
+}
