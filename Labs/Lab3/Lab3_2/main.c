@@ -1,4 +1,4 @@
-#include "../../address_map_arm.h"
+#include "../../Utility/address_map_arm.h"
 
 // Create a pointer to the memory addresses for JP1 and JP7
 volatile int* JP1 = (int*)JP1_BASE;

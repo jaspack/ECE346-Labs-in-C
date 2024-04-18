@@ -7,22 +7,16 @@ int volatile* const startingAddress = (int*)0x1000;
 
 
 
-
-int main(void)
+void main(void)
 {
-
 	char message[] = "Type here: \0";
 
+    Print(message);
     
-
     while (1)
     {
-        c = Cin();
-        if (c != '\0')
-            Cout(c);
+        PrintChar(Read());
     }
-
-	return 0;
 }
 
 
