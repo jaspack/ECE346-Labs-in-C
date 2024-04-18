@@ -1,9 +1,8 @@
-#include"../../address_map_arm.h"
+#include"../../Utility/address_map_arm.h"
+#include"../../Utility/JTAG.h"
 
 
 int volatile* const startingAddress = (int*)0x1000;
-int volatile* const JTAG = (int*)JTAG_UART_BASE;
-
 
 /*******************************************************************************
  * Subroutine to send a character to the JTAG UART
