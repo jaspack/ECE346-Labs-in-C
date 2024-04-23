@@ -2,11 +2,11 @@
 
 int main(void) {
 
-    // base address of LED lights
+    //  Base address of LED lights
     volatile int* LED_ptr = (int*)LED_BASE;
-
+    //  Base address of JP1
     volatile int* JP1 = (int*)JP1_BASE;
-    
+    //  Base address of push buttons
     volatile int* keys = (int*)KEY_BASE;
 
     while (1)

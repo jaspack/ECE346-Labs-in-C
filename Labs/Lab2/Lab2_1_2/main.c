@@ -4,7 +4,7 @@ int main(void) {
 
     // base address of LED lights
     volatile int* LED_ptr = (int*)LED_BASE;
-
+    // base address of JP1
     volatile int* JP1 = (int*)JP1_BASE;
 
 

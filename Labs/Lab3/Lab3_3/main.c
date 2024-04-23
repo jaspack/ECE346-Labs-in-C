@@ -19,7 +19,7 @@ int patterns[] =
 int main(void)
 {
 	// JP7 memory address + 1 word
-	// This sets the
+	// This sets the pins as outputs
 	*(JP7 + 1) = 0xFFFF;
 	*(JP7) = 0;
 	int switchState;

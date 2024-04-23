@@ -12,7 +12,7 @@
         <type>C Program</type>
         <source_files>
             <source_file filepath="true">main.c</source_file>
-            <source_file filepath="true">../../address_map_arm.h</source_file>
+            <source_file filepath="true">../../Utility/address_map_arm.h</source_file>
         </source_files>
         <options>
             <compiler_flags>-g -O1 -std=c99</compiler_flags>

@@ -2,12 +2,12 @@
 
 int main(void) {
 
-    //LDR R2, =LED_BASE 
-    // base address of LED lights
+    
+    //  Base address of LED lights
     volatile int* LED_ptr = (int*)LED_BASE;
-
+    //  Pattern to be displayed on the LEDs
     int pattern = 0b10100101;
-
+    //  Display Pattern
     *(LED_ptr) = pattern;
     return 0;
 }

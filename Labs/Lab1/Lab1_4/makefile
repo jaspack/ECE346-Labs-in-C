@@ -27,7 +27,7 @@ LDFLAGS		:= $(patsubst %, -Wl$(DEFINE_COMMA)%, $(ARCHLDFLAGS)) $(ARCHLDSCRIPT)
 OCFLAGS		:= -O srec
 
 # Files
-HDRS		:= ../address_map_arm.h
+HDRS		:= ../../Utility/address_map_arm.h
 SRCS		:= main.c
 OBJS		:= $(patsubst %, %.o, $(SRCS))
 

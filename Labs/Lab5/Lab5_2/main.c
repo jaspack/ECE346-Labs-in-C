@@ -2,13 +2,6 @@
 #include"../../Utility/JTAG.h"
 #include"num2str.h"
 
-
-/*
-		Design a function, e.g. NUM2STR, 
-		that converts a positive number to a string (char array) 
-		and prints out the number in the Terminal window.
-*/
-
 void main(void)
 {
 // This is the number we're converting to a string

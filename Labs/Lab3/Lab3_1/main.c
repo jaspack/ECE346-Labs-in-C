@@ -2,6 +2,7 @@
 
 int main(void) 
 {
+    //  Initialize the compressed data
     int COMPRESSED[] = 
     {
         3,
@@ -14,9 +15,11 @@ int main(void)
         0xABCD,
         0
     }
-
+    
+    //  Allocate memory for the decompressed data
     int DECOMPRESSED[10];
 
+    //  Decompress data
     int index = 0;
     for (int i = 0; i < 9; i++)
     {
@@ -25,21 +28,7 @@ int main(void)
             DECOMPRESSED[index] = COMPRESSED[i + 1];
             index++;
         }
+        // Increment i twice per iteration
         i++;
     }
 }
-
-
-/*
-    Design a program to decompress 
-    the data sequence saved 
-    in the data section (COMPRESSED)
-    and store the decompressed data to the 
-    corresponding memory location (DECOMPRESSED)
-    as a sequence. ‘0’ is used to denote the end of the
-    data sequence in the compressed representation.
-    Check the memory location where the
-    decompressed data saved at (e.g. R3) and take a
-    screenshot of the decompressed results in the
-    MEMORY page.
-*/

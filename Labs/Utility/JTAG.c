@@ -1,4 +1,4 @@
-#include"../../address_map_arm.h"
+#include"address_map_arm.h"
 
 int volatile* const JTAG = (int*)JTAG_UART_BASE;
 

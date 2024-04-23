@@ -27,8 +27,8 @@ LDFLAGS		:= $(patsubst %, -Wl$(DEFINE_COMMA)%, $(ARCHLDFLAGS)) $(ARCHLDSCRIPT)
 OCFLAGS		:= -O srec
 
 # Files
-HDRS		:= ../../Utility/address_map_arm.h ../../Utility/JTAG.h num2str.h
-SRCS		:= main.c num2str.c
+HDRS		:= ../../Utility/JTAG.h ../../Utility/address_map_arm.h num2str.h
+SRCS		:= main.c ../../Utility/JTAG.c num2str.c
 OBJS		:= $(patsubst %, %.o, $(SRCS))
 
 # Targets

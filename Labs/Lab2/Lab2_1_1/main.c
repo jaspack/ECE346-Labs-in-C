@@ -2,9 +2,9 @@
 
 int main(void) {
 
-    // base address of LED lights
+    // Base address of LED lights
     volatile int* LED_ptr = (int*)LED_BASE;
-    
+    // Base address of the switches
     volatile int* SW_ptr = (int*)SW_BASE;
     
 
