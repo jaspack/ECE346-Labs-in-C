@@ -1,4 +1,4 @@
-All programs have already been compiled.
+<h>All programs have already been compiled.</h>
 Simply open the monitor program and select file> open project
 then navigate to the desired project folder and choose the .amp file
 ***Notes for new projects***
